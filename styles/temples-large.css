@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 700px) {
+
+    header{
+        background: rgb(96, 48, 48);
+        
+        
+    }
+    h1{
+        color: white;
+    }
+  }
+
+main{
+    grid-template-columns: 1fr 2fr;
+}
