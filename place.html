@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Abdias Brevil</title>
+    <meta name="description" content="WDD 131 - country page">
+    <meta name="author" content="Abdias Brevil">
+    <link href="/styles/place.css" rel="stylesheet">
+    <link href="/styles/place-large.css" rel="stylesheet">
+    
+    <!-- Include JavaScript file -->
+    <script src="/scripts/place.js"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Haiti</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="/images/citadelle.jpg" media="(min-width: 1000px)">
+                <source srcset="/images/citadelle.jpg" media="(min-width: 550px)">
+                <img src="/images/citadelle.jpg" alt="North  Haiti" width="419" height="270">
+            </picture>
+        </div>
+    </main>
+    <section class="data">
+        <h2>Data</h2>
+        <h3>Area: <p>27,750 sq km</p></h3>
+        <h3>Population: <p>11,847,468</p></h3>
+        <h3>Capital: <p>Port-au-Prince</p></h3>
+        <h3>Language: <p>Creole and French</p></h3>
+        <h3>Currency: <p>Gourde</p></h3>
+        <h3>Time Zone: <p>UTC -5</p></h3>
+        <h3>Calling Code: <p>+509</p></h3>
+        <h3>Internet TLD: <p>.ht</p></h3>
+    </section>
+    <section class="weather">
+        <h2>Weather <img class="icon" src="/images/sun.jpg" alt="sunny"></h2>
+        <h3>Temperature: <p>36°C</p></h3>
+        <h3>Conditions: <p>Sunny</p></h3>
+        <h3>Wind: <p>19 km/h</p></h3>
+        <h3>Wind Chill: <p><span id="windChill"></span></p></h3>
+    </section>
+    
+    <footer>
+        <p>&copy; <span id="year-edition"></span> 😊Abdias Brevil😊 Port-au-Prince</p>
+        <p>Last Modified <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
