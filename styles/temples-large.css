@@ -4,23 +4,87 @@
 
 
 
+/* large view navigation ************************************/
+@media only screen and (min-width: 641px) {
+  main { display: grid;
+  grid-template-columns: 2fr 1fr;}
+  main h2 {grid-column: 1 / span 2;}
 
-
-
-
-
-@media screen and (min-width: 700px) {
-
-    header{
-        background: rgb(96, 48, 48);
-        
-        
-    }
-    h1{
-        color: white;
-    }
-  }
-
-main{
-    grid-template-columns: 1fr 2fr;
+#menu {
+  display: none; /* hide hamburger button */
 }
+
+.navigation {
+  flex-direction: row;
+}
+
+.navigation li {
+  display: block;
+  flex: 1 1 100%;
+}
+
+.stuff {
+  margin: 1rem auto;
+}
+}
+
+  
+
+
+
+
+
+
+
+
+
+  @media screen and (min-width: 641px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 641px) {
+    .navigation {
+        max-width: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+       
+        text-align: center;
+        padding: 1rem;
+        text-decoration: none;
+    }
+}
+
+
+
+
+/* large view navigation ************************************/
+@media only screen and (min-width: 641px) {
+    
+	
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	
+	.stuff {
+		margin: 1rem auto;
+	}
+}
+

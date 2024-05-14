@@ -1,37 +1,290 @@
 
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
 
-
-
-
-
-
-
-body {
-    font-family: 'Roboto', sans-serif;
-  }
   
-  header, main, footer, div {
-    max-width: 900px;
-    margin: 1rem auto;
-    border: 1px solid #bbb;
-    padding: 1rem;
-    background-color: #e6f2ff;
-  }
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--primary-color);
+  color: var(--second-color);
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid black;
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 900px;
+  margin-left: 13%;
+}
+
+
+
+
+
+nav {
+	background-color: #36454f;
+	margin: 0 auto;
+	max-width: 900px;
+}
+nav ul {
+	list-style-type: none;
+  display: none;
+}
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+
+
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+    justify-content: space-between;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+   
+
+	}
   
+}
+ul {display: flex;
+  flex-direction: row;
+  }
+
+
+
+
+
+
+  @media (min-width: 572px) {
+   
+        .container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr); 
+          grid-auto-rows: minmax(150px, auto); 
+          gap: 30px;
+        }
+
+        figure{
+          width:280px;
+          height: 150px;
+        }
+    }
+  
+    
+     
+    .container figure {
+      margin: 0; 
+    }
+    .container img {
+      width: 100%; 
+      height: 100%;
+      object-fit: cover; 
+      object-position: center;
+    }
+    
+    div {
+        display: block;
+        unicode-bidi: isolate;
+     
+    }
+   
+    main {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 90%;
+      max-width: 950px;
+      margin: 4rem auto;
+      
+  }
+
   main {
-    display: grid;
-    grid-template-columns: 2fr 1fr  ;
-    grid-gap: 1rem;
+    display: block;
+    unicode-bidi: isolate;
+}
+  
+  
+    body {
+        font-family: "Ubuntu Sans Mono", monospace;
+    }
+    
+    :root {
+        --primary-color: #0c2a3e;
+        --second-color: #e3e3e3;
+        --accent1-color: #db2222;
+    }
+
+
+
+
+
+
+@media only screen and (min-width: 340px) {
+  #menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#menu {
+    background-color: #355eab;
+    font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: .25rem .75rem;
+	
+	color: #171515;
+	
   }
   
-  section {
-    padding: 2rem;
-    background-color: #fff;
+  #menu::before {
+    content: "☰";
   }
   
-  div {
-    display: grid;
-    grid-template-columns: 1fr 2fr ;
-    grid-gap: 1rem;
+  #menu.open::before {
+    content: "❌";
   }
+  
+  .navigation {
+    display: block;
+    flex-direction: column;
+    list-style: none;
+    
+    color: #f8f1f1;
+  }
+  
+  .navigation li {
+    display: none;
+  }
+  
+  .navigation li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #ecaeae;
+   
+  }
+  
+  
+
+  .navigation li a:hover {
+    background-color: #c6eaf4;
+    font-weight: 700;
+    
+	padding: 10px;
+    width: 100px;
+    display: block;
+    color: #df9f9f;
+    text-align:center;
+    
+    text-decoration: none;
+   
+  }
+
+
+
+  
  
+  
+  
+  
+  body {font-weight: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:  sans-serif;
+    background-color: #cee4f3;
+      
+  }
+  
+  
+  
+  
+ 
+  
+  
+  nav a {
+      display:block}
+  
+  
+  nav ul {
+      list-style-type: none;
+  }
+  
+  
+  
+  @media (min-width:648px){
+      nav ul{
+          display: flex;
+         
+      }
+      nav ul li {
+          flex: 1 1 100%;
+      }
+      
+  }
+  
+  
+  
+  main p h3 {
+    width: 180px;
+    text-align: center;
+  font-family: 	'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+  }
+  
+  iframe {margin-left: 15%;
+    width:136%;
+    padding: 1px;
+  
+  ;}
+  
+  
+  
+  
+  
+ 
+  footer .lastModified {text-decoration: #068ce6;}
+  
+  footer {text-align: center;
+          margin: 0 auto;
+          max-width: 915px;
+          border: 2px solid rgba(0, 0, 0, 0.1);
+          background:  #127bb9;
+          margin-bottom: 5px;
+          height: 100px;
+      width:950px;
+      margin-left: 12%;
+  }
+  
+  
+  
+  

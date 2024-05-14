@@ -8,7 +8,8 @@
         <meta name="author" content="Abdias Brevil">
         <link href="styles/temples.css" rel="stylesheet">
         <link href="styles/temples-large.css" rel="stylesheet">
-
+         <script src="scripts/getdates.js"></script>
+         <script src="scripts/temples.js"></script>
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -18,8 +19,12 @@
     <header>
         <h1>Temple Album</h1>
        
-        <nav id="menu">
-            <ul class=-navigation>
+        
+
+        <nav >
+
+            <button id="menu" title="Open Menu"></button>
+            <ul class="navigation" >
                 <li>
                     <a class="active" href="#" title="Home">Home</a>
                 </li>
@@ -42,46 +47,88 @@
 
     <main>
         <h2>Home</h2>
-        <section class="container">
-            <div>
+       
+            <div class="container">
                 <figure>
-                    <img src="images/TempleHt.jpg" alt="temples"> 
+                    <img src="images/TempleHt.jpg" alt="temples" width="280" height="150"> 
+                        <figcaption>Haiti, Port-au-Prince  temple</figcaption>
         
                     </figure>
-        
-                    <figure>
-                        <img src="images/TempleHt.jpg" alt="temples">
-                        <P>Temple Haiti</P> 
             
-                    </figure>
-            </div>
-            
-
-            <div>
-                <figure>
-                    <img src="images/TempleHt.jpg" alt="temples"> 
-        
-                </figure>
-                <figure>
-                    <img src="images/TempleHt.jpg" alt="temples"> 
-        
-                </figure>
-            </div>
-
-
-            <div>
-                <figure>
-                    <img src="images/TempleHt.jpg" alt="temples"> 
-        
-                </figure>
-                <figure>
-                    <img src="images/TempleHt.jpg"alt="temples"> 
-        
-                </figure>
-            </div>
            
-        </section>
+                    <figure>
+                        <img src="images/TempleHt.jpg" alt="temples" width="280" height="150"> 
+                        <figcaption>Haiti, Port-au-Prince  temple</figcaption>
+            
+                    </figure>
+          
+            
+
+           
+                <figure>
+                    <img src="images/TempleHt.jpg" alt="temples" width="280" height="150"> 
+                        <figcaption>Haiti, Port-au-Prince  temple</figcaption>
+                </figure>
+           
+            
+            
+                <figure>
+                    <img src="images/TempleHt.jpg" alt="temples" width="280" height="150"> 
+                    <figcaption>Haiti, Port-au-Prince  temple</figcaption>
+        
+                </figure>
+            
+
+
+           
+                <figure>
+                    <img src="images/TempleHt.jpg" alt="temples" width="280" height="150"> 
+                        <figcaption>Haiti, Port-au-Prince  temple</figcaption>
+        
+                </figure>
+           
+            
+                <figure>
+                    <img src="images/TempleHt.jpg" alt="temples" width="280" height="150"> 
+                        <figcaption>Haiti, Port-au-Prince  temple</figcaption>
+
+        
+                </figure>
+
+                <figure>
+                    <img src="images/TempleHt.jpg" alt="temples" width="280" height="150"> 
+                    <figcaption>Haiti, Port-au-Prince  temple</figcaption>
+
+        
+                </figure>
+
+                <figure>
+                    <img src="images/TempleHt.jpg" alt="temples" width="280" height="150"> 
+                    <figcaption>Haiti, Port-au-Prince  temple</figcaption>
+
+        
+                </figure>
+
+                <figure>
+                    <img src="images/TempleHt.jpg" alt="temples" width="280" height="150"> 
+                        <figcaption>Haiti, Port-au-Prince  temple</figcaption> 
+
+        
+                </figure>
+
+
+
+
+            </div>
+       
     </main>
+
+    <footer  class="footer">
+        <p class="year-highlight"> </p>
+        <P id="copyright">  &copy; <span id="currentYear"></span>Temple Port-au-Prince Haiti  </P>
+        <p>Last modified <span id="lastModified"> </span></p>
+        <script src="scripts/getdates.js" defer></script>
+        </footer>
     
 </body>
 </html>
