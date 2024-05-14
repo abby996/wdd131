@@ -1,0 +1,36 @@
+@media screen and (min-width: 800px) {
+    h2.weather::after {
+        content: url('images/weather-icon.svg'); 
+    }
+    .icon {
+        width: 45px;
+        height: 40px;
+        display: inline-block;
+    }
+    .weather, .data {
+        position: absolute;
+        bottom: 50px;
+        background-color: #1166e5;
+        background-color: rgba(25, 102, 216, 0.75);
+        border-radius: 10%;
+        margin: auto;
+        padding: 1rem;
+    }
+    .weather {
+        right: 45px;
+    }
+    .data {
+        left: 45px;
+    }
+    p, h3 {
+        padding: 2px;
+        margin: 2px;
+    }
+    h2 {
+        position: relative;
+        right: 20px;
+        background-color: var(--label-color);
+        color: #ee2323;
+        text-align: left;
+    }
+}
