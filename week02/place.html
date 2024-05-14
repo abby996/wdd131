@@ -22,34 +22,28 @@
     <header>
         <h1>Haiti</h1>
     </header>
-    <main>
-        <div class="hero">
+    <main>        
+        <div class="hero">            
             <picture>
-                <source srcset="/images/citadelle.jpg" media="(min-width: 1000px)">
-                <source srcset="/images/citadelle.jpg" media="(min-width: 550px)">
-                <img src="/images/citadelle.jpg" alt="North  Haiti" width="419" height="270">
+                <source srcset="week03/images/aieaie-larger.webp" media="(min-width:769px)" />
+                <source srcset="week03/images/aieaie-small.webp" media="(max-width:768px)" />
+                <img src="week03/images/aieaie-small.webp" alt="Aie Aie de Madagascar" />
             </picture>
         </div>
+        <div class="data">
+            <h2>Data</h2>
+            <ul id="data-list"></ul>
+        </div>
+        <div class="weather">
+            <h2>Weather <img src="week03/images/icon-weather.svg" width="64" alt="Weather" /></h2>
+            <ul id="weather-list"></ul>
+        </div>
+        <div class="license">
+            <p>
+                Photo de <a href="https://unsplash.com/fr/@graphicnode?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Graphic Node</a> sur <a href="https://unsplash.com/fr/photos/arbres-pres-du-sentier-pendant-la-journee-yPSbirjJWzs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a><br>
+            </p>
+        </div>
     </main>
-    <section class="data">
-        <h2>Data</h2>
-        <h3>Area: <p>27,750 sq km</p></h3>
-        <h3>Population: <p>11,847,468</p></h3>
-        <h3>Capital: <p>Port-au-Prince</p></h3>
-        <h3>Language: <p>Creole and French</p></h3>
-        <h3>Currency: <p>Gourde</p></h3>
-        <h3>Time Zone: <p>UTC -5</p></h3>
-        <h3>Calling Code: <p>+509</p></h3>
-        <h3>Internet TLD: <p>.ht</p></h3>
-    </section>
-    <section class="weather">
-        <h2>Weather <img class="icon" src="/images/sun.jpg" alt="sunny"></h2>
-        <h3>Temperature: <p>36°C</p></h3>
-        <h3>Conditions: <p>Sunny</p></h3>
-        <h3>Wind: <p>19 km/h</p></h3>
-        <h3>Wind Chill: <p><span id="windChill"></span></p></h3>
-    </section>
-    
     <footer>
         <p>&copy; <span id="year-edition"></span> 😊Abdias Brevil😊 Port-au-Prince</p>
         <p>Last Modified <span id="lastModified"></span></p>
