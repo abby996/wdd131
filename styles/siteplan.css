@@ -14,7 +14,7 @@ body {
 header, body, 
 footer {
     margin: 0 auto;
-    border: 1px solid black;
+    border: 1px solid rgb(8, 8, 8);
     max-width: 1320px;
 }
 
@@ -129,3 +129,51 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+		
+    .about-food {
+        margin: 0px;
+        padding: 10px;
+    }
+}
+
+
+div{
+        
+    display: block;
+    unicode-bidi: isolate;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+} 
+
+.about-food {float: left;
+			
+    padding: 10px;
+
+  
+margin-right: 100px;
+
+padding-top: 20px;
+padding-right: 18px;
+padding-bottom: 20px;
+padding-left: 18px;
+}
+
+
+
+a {
+    
+    cursor: pointer;
+    text-decoration: underline;
+    
+    }
