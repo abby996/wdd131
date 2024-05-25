@@ -36,3 +36,32 @@
         color: rgb(238, 117, 117);
     }
 }
+
+
+/* large view navigation ************************************/
+@media only screen and (min-width: 641px) {
+    main { display: grid;
+    }
+   
+  
+  #menu {
+    display: none; /* hide hamburger button */
+  }
+  
+  .navigation {
+    flex-direction: row;
+  }
+  
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+  }
+  
+  .stuff {
+    margin: 1rem auto;
+  }
+  }
+
+  
+  
+    
