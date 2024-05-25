@@ -1,16 +1,12 @@
-document.getElementById('menu').addEventListener('click', function() {
-    document.querySelector('.navigation').classList.toggle('show')
-}) 
 
-const hamButton = document.querySelector('#menu');
 
+const hamButton = document.querySelector('#ham-menu');
 const navigation = document.querySelector('.navigation');
-const main = document.querySelector("main");
-
 
 hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
+
 
     
         if (modeButton.textContent.includes("☰")) {
