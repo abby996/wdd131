@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Form -  Abdias Brevil</title>
+    <meta name="description" content="WDD 131 - product form review">
+    <meta name="author" content="Abdias Brevil">
+    <link href="styles/form.css" rel="stylesheet">
+    <script src="scripts/form.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+
+</head>
+
+
+    
+<body>
+    <h1>Product Review </h1>
+    <form action="review.html" method="get">
+      <fieldset>
+        <legend>Product Name</legend>
+        <label for="productName">Product Name:</label>
+        <select id="productName" name="productName" required>
+          <option value="" disabled selected>Select a Product ...</option>
+          
+          <!-- Dynamically populate options from product array -->
+          <!-- Example: <option value="Product Name">Product Name</option> -->
+        </select>
+      </fieldset>
+
+      <fieldset>
+  
+        <label for="overallRating">Overall Rating:</label><br>
+        <input type="radio" id="1star" name="overallRating" value="1" required><label for="1star">☆</label>
+        <input type="radio" id="2star" name="overallRating" value="2" required><label for="2star">☆☆</label>
+        <input type="radio" id="3star" name="overallRating" value="3" required><label for="3star">☆☆☆</label>
+        <input type="radio" id="4star" name="overallRating" value="4" required><label for="4star">☆☆☆☆</label>
+        <input type="radio" id="5star" name="overallRating" value="5" required><label for="5star">☆☆☆☆☆</label>
+      </fieldset>
+      <fieldset>
+        <label for="installationDate">Date of Installation:</label>
+        <input type="date" id="installationDate" name="installationDate" required>
+      </fieldset>
+
+      <fieldset>
+        <label>Which features did you find Useful in the products?</label><br>
+        <p>(Check all that apply)</p>
+        <input type="checkbox" id="feature1" name="usefulFeatures" value="Feature 1">
+        <label for="feature1">Durability</label><br>
+        <input type="checkbox" id="feature2" name="usefulFeatures" value="Feature 2">
+        <label for="feature2">Ease of use</label><br>
+        <input type="checkbox" id="feature3" name="usefulFeatures" value="Feature 3">
+        <label for="feature3">Perfomance</label><br>
+        <input type="checkbox" id="feature4" name="usefulFeatures" value="Feature 4">
+        <label for="feature4">Design</label><br>
+        <!-- Add more checkboxes for other features as needed -->
+      </fieldset>
+      
+        <label for="writtenReview">Written Review: <p>(optional)</p> </label><br>
+        <textarea id="writtenReview" name="writtenReview" ></textarea> 
+  
+        <label for="userName">your Name: <p>(optional)</p></label>
+        <input type="text" id="userName" name="userName">
+  
+        <input type="submit" value="Post Review">
+      </fieldset>
+    </form>
+  
+    
+    <footer>
+      <p class="year-highlight"> </p>
+    <P id="copyright">  &copy; <span id="currentYear"></span> ♨️ Abdias Brevil, Port-au-Prince  ♨️ </P>
+    <p>Haiti</p>
+    <p>Last modified <span id="lastModified"> </span></p>
+    <script src="scripts/getdates.js" defer></script>
+    </footer>
+  </body>
+</html>
