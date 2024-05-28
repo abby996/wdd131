@@ -23,7 +23,7 @@ body {
   background: rgb(232, 232, 166);
   height: 60px;
   line-height: 60px; /* Vertical centering */
-  width: 1000px; /* Fixed width for h1 */
+  width: 100%; /* Fixed width for h1 */
   margin: 0 auto 30px; /* Center horizontally */
   margin-bottom: 20px; /* Add space between h1 and form */
 
@@ -34,35 +34,37 @@ body {
     background: rgb(232, 232, 166);
     height:0 auto ;
     line-height: 30px; /* Vertical centering */
-    margin-left: 10%;
+    margin-right: 10%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   
+    margin-bottom: 20px; /* Add space between h1 and form */
+    margin-top: 30px;
+
   }
   
  footer p { color: black;}
   
   footer {
-    width: 80%; /* Full width */
+    width: 760px; /* Full width */
   }
   
   /* Media query for small screens */
   @media screen and (max-width: 600px) {
     h1 {
-      width: 80%; /* Full width on small screens */
+      width: 90%; /* Full width on small screens */
       margin: 0; /* Reset margin */
-      margin-left: 10%;
-      
+      margin-left: 5%;
+    
     }
-    footer {width: 80%; /* Full width on small screens */
+    footer {width: 90%; /* Full width on small screens */
       margin: 0; /* Reset margin */
-      margin-left: 10%;
+      margin-left: 5%;
     }
   }
   
   
   form {
     
-    width: 80%; /* Set width to fill the container */
+    width: 90%; /* Set width to fill the container */
   margin: auto; /* Centers the form horizontally */
   display: flex; /* Enable flexbox */
   flex-direction: column; /* Arrange items vertically */
@@ -70,18 +72,21 @@ body {
   align-items: center; /* Centers content vertically */
   border: solid 1px;
   background-color: rgb(232, 232, 221);
+  padding: 10px;
+  height: 220px;
+  
 }
   
 
 
 
-  label {
+label {
     font-weight: bold;
     margin-bottom: 5px;
     
   }
 
-  input[type="text"]#userName {
+input[type="text"]#userName {
     width: 420px; 
   }
   
@@ -161,6 +166,7 @@ body {
     border: solid 1px;
     align-items: center;
     margin-left: 5px;
+    padding: 8px;
   }
 
 
@@ -184,7 +190,9 @@ body {
   }
 
   form > * {
-    margin: 10px; /* Add spacing between form elements */
+    margin: 10px; /* Add spacing between form elements */ 
+    margin-bottom: 10px;
+
   }
   
   @media screen and (min-width: 600px) {
@@ -192,5 +200,39 @@ body {
       flex-direction: row; /* Arrange items horizontally on larger screens */
       flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
       
+      
     }
+
+    fieldset input[type="date"] {
+      width: 10%; /* Adjust the width to your preference */
+    }
+  }
+
+
+  fieldset {
+    border: none;
+    width: 90%; /* Adjust width as needed */
+    margin: auto; /* Center horizontally */
+    margin-bottom: 20px; /* Add some space below the fieldset */
+  }
+  
+  fieldset label {
+    display: block; /* Ensure labels are displayed as blocks */
+    text-align: left; /* Align label text to the left */
+    margin-bottom: 5px; /* Add some space below each label */
+  }
+  
+  fieldset select {
+    width: 100%; /* Make the select element fill the entire width of the fieldset */
+    padding: 10px; /* Add padding for better appearance */
+    margin-bottom: 10px; /* Add some space below the select element */
+  }
+  
+  fieldset label {
+    display: inline-block; /* Ensures labels appear in-line */
+    margin-right: 10px; /* Add space between radio buttons and labels */
+  }
+
+  fieldset input[type="date"] {
+    width: 600px; /* Adjust the width to your preference */
   }
