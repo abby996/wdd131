@@ -19,13 +19,13 @@ body {
   h1
    {
     text-align: center;
-  margin-top: 30px;
-  background: rgb(232, 232, 166);
-  height: 60px;
-  line-height: 60px; /* Vertical centering */
-  width: 100%; /* Fixed width for h1 */
-  margin: 0 auto 30px; /* Center horizontally */
-  margin-bottom: 20px; /* Add space between h1 and form */
+    margin-top: 30px;
+    background: rgb(232, 232, 166);
+    height: 60px;
+    line-height: 60px; /* Vertical centering */
+    width: 72%; /* Fixed width for h1 */
+    margin: 0 auto 30px; /* Center horizontally */
+    margin-bottom: 20px; /* Add space between h1 and form */
 
   }
   footer {
@@ -36,44 +36,46 @@ body {
     line-height: 30px; /* Vertical centering */
     margin-right: 10%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-bottom: 20px; /* Add space between h1 and form */
-    margin-top: 30px;
+   
+    
 
   }
   
  footer p { color: black;}
   
   footer {
-    width: 760px; /* Full width */
+    width: 72%; /* Full width */
+    margin: 0 auto 30px
   }
   
   /* Media query for small screens */
   @media screen and (max-width: 600px) {
     h1 {
-      width: 90%; /* Full width on small screens */
+      width: 75%; /* Full width on small screens */
       margin: 0; /* Reset margin */
-      margin-left: 5%;
+      margin-left: 12%;
     
     }
-    footer {width: 90%; /* Full width on small screens */
+    footer {width: 75%; /* Full width on small screens */
       margin: 0; /* Reset margin */
-      margin-left: 5%;
+      margin-left: 13%;
+      
     }
   }
   
   
   form {
     
-    width: 90%; /* Set width to fill the container */
-  margin: auto; /* Centers the form horizontally */
-  display: flex; /* Enable flexbox */
-  flex-direction: column; /* Arrange items vertically */
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
-  border: solid 1px;
-  background-color: rgb(232, 232, 221);
-  padding: 10px;
-  height: 220px;
+    width: 70%; /* Set width to fill the container */
+    margin: auto; /* Centers the form horizontally */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    border: solid 1px;
+    background-color: rgb(232, 232, 221);
+    padding: 10px;
+    height: 100%;
   
 }
   
@@ -87,7 +89,7 @@ label {
   }
 
 input[type="text"]#userName {
-    width: 420px; 
+    width: 88%; 
   }
   
   
@@ -117,7 +119,7 @@ input[type="text"]#userName {
     cursor: pointer;
     border: solid 1px;
    align-items: center;
-   width: 100%;
+   width: 90%;
   }
   
   input[type="submit"]:hover {
@@ -157,10 +159,10 @@ input[type="text"]#userName {
     
   
   }
-  p{color: mediumblue;}
+  span {color: mediumblue;}
 
   textarea {
-    width: 95%; /* Adjust width to fill available space */
+    width: 88%; /* Adjust width to fill available space */
     height: 120px; /* Set desired height */
     resize: vertical; /* Allow vertical resizing only */
     border: solid 1px;
@@ -185,13 +187,14 @@ input[type="text"]#userName {
     h1 {
       text-align: center; /* Center text horizontally */
       margin-bottom: 20px; /* Add space between h1 and form */
+      
 
     }
   }
 
   form > * {
     margin: 10px; /* Add spacing between form elements */ 
-    margin-bottom: 10px;
+   
 
   }
   
@@ -211,7 +214,7 @@ input[type="text"]#userName {
 
   fieldset {
     border: none;
-    width: 90%; /* Adjust width as needed */
+    width: 100%; /* Adjust width as needed */
     margin: auto; /* Center horizontally */
     margin-bottom: 20px; /* Add some space below the fieldset */
   }
@@ -223,7 +226,7 @@ input[type="text"]#userName {
   }
   
   fieldset select {
-    width: 100%; /* Make the select element fill the entire width of the fieldset */
+    width: 75%; /* Make the select element fill the entire width of the fieldset */
     padding: 10px; /* Add padding for better appearance */
     margin-bottom: 10px; /* Add some space below the select element */
   }
@@ -234,5 +237,5 @@ input[type="text"]#userName {
   }
 
   fieldset input[type="date"] {
-    width: 600px; /* Adjust the width to your preference */
+    width: 87%; /* Adjust the width to your preference */
   }
