@@ -30,51 +30,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-// JavaScript for adding food items
-
-// Sample food data
-const foods = [
-    { name: "Lalo", category: "mainCourses" },
-    { name: "Fritay", category: "appetizers" },
-    { name: "Soup Joumou", category: "mainCourses" },
-    { name: "Rice and Legume", category: "mainCourses" },
-    { name: "Griot", category: "mainCourses" }
-];
-
-// Function to generate HTML for food items
-function generateFoodHTML(food) {
-    return `
-        <figure>
-            <img src="https://via.placeholder.com/150" alt="${food.name}" loading="lazy">
-            <p class="about-food">
-                ${food.name} is a delicious Haitian dish.
-            </p>
-        </figure>
-    `;
-}
-
-// Function to display food items based on category
-function displayFood(category) {
-    const foodList = document.getElementById("foodList");
-    foodList.innerHTML = "";
-
-    foods.filter(food => food.category === category).forEach(food => {
-        const foodHTML = generateFoodHTML(food);
-        foodList.innerHTML += foodHTML;
-    });
-}
-
-// Event listener for the "Add Food" button
-document.getElementById("addFoodButton").addEventListener("click", function() {
-    const selectedCategory = document.querySelector('input[name="foodCategory"]:checked').value;
-    displayFood(selectedCategory);
-});
-
-// Initial display of food items based on the selected category
-document.addEventListener("DOMContentLoaded", function() {
-    const selectedCategory = document.querySelector('input[name="foodCategory"]:checked').value;
-    displayFood(selectedCategory);
-});
 
 
 
