@@ -1,67 +1,165 @@
-@media screen and (min-width: 641px) {
 
-    h2 {
-        font-size: 29px;
-    }
+h1 {color: rgb(234, 100, 100);}
 
-    #ham-menu {
-        display: none;
-    }
+h2 {color: rgb(20, 50, 220);}
 
-    header {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+button {color: rgb(86, 206, 86);
+        background: dimgray;
+       margin-left: 15px;
+}
 
-    .navigation {
-        max-width: 800px;
+@media screen and (max-width: 600px) {
+  
+  .navigation {
+      max-width: 800px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
+  
+
+  .navigation a {
+      display: block;
+      text-align: center;
+      padding: 1rem;
+      text-decoration: none;
+  }
+
+  .navigation a:hover {
+      border: 1px solid steelblue;
+      color: rgb(249, 87, 87);
+  }
+
+  
+}
+
+/* Styles for small screens */
+@media only screen and (max-width: 600px) {
+  figure {
+      flex-direction: column; /* Stack image on top of text */
+  }
+
+  figure img {
+      width: 100%; /* Ensure image fills container width */
+      height: 100%;
+      margin-bottom: 10px; /* Add margin below image */
+  }
+
+  .about-food {
+      flex: none; /* Reset flex to ensure text doesn't fill remaining space */
+  }
+}
+
+  
+@media screen and (max-width: 600px) {
+  header {
+      align-items: flex-start; /* Align items vertically to the top */
+  }
+
+  .navigation {
+      margin-top: 10px; /* Add margin above navigation */
+  }
+}
+
+@media only screen and (min-width: 600px) {
+    
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+		
+	}
+   
+  }
+
+  @media only screen and (min-width:600px){
+    nav ul{
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+       
+    }
+    nav ul li {
+        flex: 1 1 100%;
     }
     
-    .wrap {
-        flex-wrap: wrap;
-    }
-    
-    .navigation a {
-        display: block;
-        text-align: center;
-        padding: 1rem;
-        text-decoration: none;
-    }
-    
-    .navigation a:hover {
-        border: 1px solid steelblue;
-        color: rgb(238, 117, 117);
-    }
 }
 
 
-/* large view navigation ************************************/
-@media only screen and (min-width: 641px) {
-    main { display: grid;
-    }
-   
-  
-  #menu {
-    display: none; /* hide hamburger button */
-  }
-  
-  .navigation {
-    flex-direction: row;
-  }
-  
-  .navigation li {
-    display: block;
-    flex: 1 1 100%;
-  }
-  
-  .stuff {
-    margin: 1rem auto;
-  }
-  }
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: .25rem .75rem;
+	background-color: #eee;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
 
-  
-  
+}
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+     width: 900px;
+}
+.navigation li {
+	display: none;
+}
+
+
+.navigation li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	
+}
+.navigation li a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 500;
+	padding: 10px;
+    width: 100px;
+    display: block;
+    height: 100p;
+    text-align:center;
     
+ 
+    text-decoration: none;
+   
+
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+	display: block;
+	width: 100%;
+	
+}
+.open li a {
+	display: block;
+}
+
+.active::before {
+	content: " ";
+}
+
+

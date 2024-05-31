@@ -6,7 +6,7 @@
         <title>WDD 131- Many kind of food </title>
         <meta name="description" content="WDD 131 -- site plan">
         <meta name="author" content="Abdias Brevil">
-        <link href="styles/siteplan-large.css" rel="stylesheet">
+        
         <link href="styles/siteplan.css" rel="stylesheet">
         <script src="scripts/siteplan.js"></script>
         
@@ -20,21 +20,20 @@
 <body>
     <header>
         <h1>Haitian foods</h1>
-
-        <button id="ham-menu" class="menu" aria-label="Toggle menu"></button>
+        
+    
+        <button id="menu" title="Open Menu">:</button>
         <nav>
             <ul class="navigation">
-                
                 <li><a class="active" href="#" title="Home">Home</a></li>
-                 <li><a href="#" title="History"> story</a> </li>   
-                <li><a href="#" title="conctact">contact us</a> </li>
-                <li><a href="#" title="help"> help</a>  </li>
-
-                
+                <li><a href="story.html" title="story">Story</a></li>
+                <li><a href="#" title="contact">Contact </a></li>
+                <li><a href="#" title="help">Help</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    
+   
 
         <div id="haitian-food" class="haitian-food">
             <figure>
@@ -44,7 +43,10 @@
                 <P class="about-food">
                     Lalo is the Haitian name for “jute leaves.” These are very nutritious leaves that contain lots of antioxidants, vitamins and minerals. The Latibonit people of Haiti love Lalo-based meals. It is actually their signature Haitian cuisine. However, people from other departments in Haiti love to prepare and eat Lalo as well. They might make it a bit differently, but the basic ingredients are still the same.
                 
-                When you prepare Lalo at home, you should try to order your jute leaves directly from a Haitian supplier or Asian marketplace. They provide the most authentic jute leaves that taste like the real leaves you would have in Haiti. The name on the packaging might state something like “Molokhia” or “Frozen Green Molokhia.” It is the same thing as Lalo, so lookout for that.</P>
+                When you prepare Lalo at home, you should try to order your jute leaves directly from a Haitian supplier or Asian marketplace. They provide the most authentic jute leaves that taste like the real leaves you would have in Haiti. The name on the packaging might state something like “Molokhia” or “Frozen Green Molokhia.” It is the same thing as Lalo, so lookout for that.
+                <a href="story.html#lalo" class="learn-more">Learn More</a>
+            </P>
+                
             </figure>
 
             <figure>
@@ -54,8 +56,9 @@
                 <p class="about-food">
                     Haitian Fritay is a culinary experience that transcends the boundaries of simple street food. It is a true institution, a cultural heritage that brings together local residents and visitors around a common passion for unique flavors. Some of the most popular delicacies include fried plantains, pate kòde, accra, pickle and many more.</p>
             <p>Plantains, green bananas with firm flesh, are often the star of Haitian Fritay. These plantain slices are dipped in a special batter, then fried until they reach crispy perfection. The contrast between the golden, crisp exterior and the tender, sweet interior of the plantains creates a symphony of flavors that delights the taste buds.
-
+                <a href="story.html#fritay" class="learn-more">Learn More</a>  
             </p>
+            
             </figure>
 
             <figure>
@@ -67,24 +70,65 @@
                     After marinating the beef for at least 3 hours, the meat is first cooked. Then, we add vegetables such as carrot, celery, leek, turnip, onion, potato, cabbage, and malanga (yam).
 
                  At the same time, the giraumon is cooked separately and pureed, before being added to the beef and vegetable mixture.
+                
+                 <a href="story.html#giraumon" class="learn-more">Learn More</a>
                 </p>
             </figure>
 
             <figure>
                 
                 <img src="https://cdn.tasteatlas.com//images/dishes/46f8e46b2f8e498d84414adedc9370ab.jpg?w=905&h=510" alt="Rice and legume" loading="lazy">
-                <p class="about-food">Heavily influenced by African cooking traditions, legim is a popular Haitian dish with many variations regarding the ingredients. It typically consists of various mixed vegetables that are cooked with meat (usually beef) and then mashed together.
+                <p class="about-food">
+                    Heavily influenced by African cooking traditions, legim is a popular Haitian dish with many variations regarding the ingredients. It typically consists of various mixed vegetables that are cooked with meat (usually beef) and then mashed together.
 
-                    Legim (meaning legumes or vegetables) usually contains cabbage, eggplant, watercress, green beans, carrots, and chayote squash. The stew is traditionally prepared on Saturdays, and it is often accompanied by cornmeal or rice.</p>
+                    Legim (meaning legumes or vegetables) usually contains cabbage, eggplant, watercress, green beans, carrots, and chayote squash. The stew is traditionally prepared on Saturdays, and it is often accompanied by cornmeal or rice.
+                    <a href="story.html#legim" class="learn-more">Learn More</a>
+                </p>
             
             </figure>
 
             <figure>
                 <img src="https://kednycuisine.com/wp-content/uploads/2015/11/griot-haitien-kedny-cuisine-main1.jpg" alt="Griot" loading="lazy">
                 <p class="about-food">
-                    Tassot is a traditional Haitian dish made with goat meat or beef as the main ingredient. Cubed meat is usually marinated in a combination of onions, orange juice, and lemon juice. It is then fried until it develops a crispy, brownish exterior. The dish is typically served with fried plantains, rice and beans or mushroom rice, and a spicy sauce known as ti malice on the side</p>
-            </figure>
+                    Griot is a typical Haitian dish consisting of cubes of pork meat slowly simmered in a sweet, spicy and tangy marinade of chili peppers, onions and orange, lime or lemon juice until 'they are tender, then fried in a pan. Instead of developing the flavor of the drippings, the sauce acts as a cooking liquid, usually reduced to a glossy glaze. The dish is a tribute to the griot, a person of high social status in many West African countries, traditionally a local historian, diplomat, warrior, tribal leader, community leader or teacher. As pork was rare and expensive in Haiti, the dish was only prepared for special occasions and festive events, and the connection between the two griots is obvious – they are both very important to their respective cultures.
+                    <a href="story.html#fritay" class="learn-more">Learn More</a>
+                </p>
+                </figure>
+
         </div>
+         
+
+
+       
+       <form>
+       
+        <fieldset>
+            <label>What kind of Haitian foods do you love?</label><br>
+            
+            <input type="checkbox" id="feature1" name="usefulFeatures" value="Feature 1">
+            <label for="feature1">Lalo</label><br>
+            <input type="checkbox" id="feature2" name="usefulFeatures" value="Feature 2">
+            <label for="feature2">Fritay</label><br>
+            <input type="checkbox" id="feature3" name="usefulFeatures" value="Feature 3">
+            <label for="feature3">Soup Joumou</label><br>
+            <input type="checkbox" id="feature4" name="usefulFeatures" value="Feature 4">
+            <label for="feature4">Griot</label><br>
+            <input type="checkbox" id="feature5" name="usefulFeatures" value="Feature 5">
+            <label for="feature5">Rice and legumes </label><br>
+            <input type="checkbox" id="feature6" name="usefulFeatures" value="Feature 6">
+            <label for="feature6">Tonmtonm</label><br>
+            <!-- Add more checkboxes for other features as needed -->
+            </fieldset>
+             
+            <fieldset>
+                <label for="writtenExperience">Share your experience: <span>(optional)</span></label>
+                <textarea id="writtenExperience" name="writtenExperience"></textarea>
+                
+                <input type="submit" value="Submit Experience">
+            </fieldset>
+        </form>
+  
+  
 
     </main>
 
@@ -102,6 +146,7 @@
     <footer>
         <p class="year-highlight"> </p>
         <P id="copyright">  &copy; <span id="currentYear"></span> Haitian foods  </P>
+        <img class="flag" src="images/drapoAyiti.png" alt="flagHaiti">
         <p>Last modified <span id="lastModified"> </span></p>
         <script src="scripts/getdates.js" defer></script>
     </footer>

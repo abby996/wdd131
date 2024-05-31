@@ -1,223 +1,388 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-* {
+/* General styles */
+body {
+    font-family: 'PT Serif', serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-}
-
-header, body, 
-footer {
-    margin: 0 auto;
-    border: 1px solid rgb(8, 8, 8);
-    max-width: 1320px;
 }
 
 header {
-    background-color: rgb(68, 65, 231);
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
+    background-color: #222; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px;
+    display: flex; /* Flex container */
+    align-items: center; /* Align items vertically */
     justify-content: space-between;
-    align-items: center;
-    border: 1px solid black;
 }
 
 h1 {
-    font-size: 2rem;
-    margin-left: 1rem;
-    font-size: 1.5rem;
-    color: yellow;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 'Mooli', sans-serif;
 }
 
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    display: block;
+       font-size: 20px;
+       text-decoration: none;
+       color: khaki;
+       transition: color 0.3s ease;
+    
+       
+   
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+nav a:hover {
+    color: #f79e9e;
+}
+
+/* Styles for small screens */
 .navigation {
     display: flex;
-    flex-direction: row; /* Ensure horizontal layout for large screens */
-    list-style: none;
-    align-items: center;
+    
 }
 
-.navigation li {
-    margin-right: 20px; /* Add spacing between navigation items */
-}
-
-.navigation a {
-    display: none;
-    padding: 0.75rem;
-    text-decoration: none;
-    text-align: center;
-    color: rgb(249, 248, 242);
-}
-
-.navigation a:hover {
-    font-weight: 700;
-    text-decoration: underline;
-}
-
-
-.open .navigation a {
+.navigation.active {
     display: block;
 }
 
 
-
-#ham-menu {
-    font-size: 1.5rem;
-    border:0;
-    background: none;
-    color: white;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    content: "☰";
-}
-
-#ham-menu::before {
-    content: "☰";
-}
-
-#ham-menu.open::before {
-    content: "❌";
-}
-
-/* CSS for small screens */
-@media only screen and (max-width: 600px) {
+/* Styles for large screens */
+@media screen and (min-width: 768px) {
     .navigation {
-        display: none; /* Hide navigation links by default on small screens */
+        display: flex;
     }
-
-    #ham-menu {
-        display: block; /* Show hamburger menu button on small screens */
-    }
+    figure img {width: 100%;}
 }
 
-/* Display navigation links when menu is open */
-.open .navigation {
-    display: flex; /* Make navigation links visible when menu is open */
-}
-
-
-/*Food pictures*/
+/* Main content styles */
 main {
-    max-width: 1220px;
-    margin: 10px;
-    padding: 2px;
-}
-
-h2 {
-    text-align: center;
-    font-size: 1rem;
-}
-
-.haitian-food {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    padding: 20px;
 }
 
 figure {
+    margin-bottom: 20px;
     display: flex;
-    
-    border: 1px solid #cccccc;
-    padding: 4px;
-    margin: auto;
-    
-}
-
-figure p {
-    display: block;
-    text-align: left;
 }
 
 figure img {
-    width: 400px;
-    height: 300px;
+    max-width: 30%;
+    height: 30%;
+    border-radius: 5px;
+    margin-right: 20px;
     object-fit: cover;
     object-position: center;
+
 }
 
+.about-food {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Mooli', cursive;
+}
 
-
+/* Footer styles */
 footer {
-    background-color:  rgb(68, 65, 231);
-    color: #fff;
+    background-color: #222; /* Dark background color */
+    color: #fff; /* White text color */
     padding: 20px;
     text-align: center;
 }
 
-
-
-@media only screen and (max-width: 600px) {
-		
-    .about-food {
-        margin: 0px;
-        padding: 10px;
-    }
+footer p {
+    margin-bottom: 10px;
 }
 
-
-div{
-        
-    display: block;
-    unicode-bidi: isolate;
+.flag {
+    width: 50px;
+    margin-top: 10px;
 }
 
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-} 
-
-.about-food {float: left;
-			
-    padding: 10px;
-
-  
-margin-right: 100px;
-
-padding-top: 20px;
-padding-right: 18px;
-padding-bottom: 20px;
-padding-left: 18px;
+/* Scenarios section styles */
+#scenarios {
+    padding: 20px;
 }
 
-
-
-a {
-    
-    cursor: pointer;
-    text-decoration: underline;
-    
-    }
-
-
-    #scenarios {
-        margin-top: 20px;
-        color: dodgerblue;
+#scenarios h2 {
+    margin-top: 0;
+    color:coral
+}
+#scenarios ul {
+        list-style-type: none;
     }
     
-    #scenarios h2 {
-        color: #f44040;
-        font-size: 1.5rem;
+    #scenarios ul li {
         margin-bottom: 10px;
     }
-    
-    #scenarios p {
-        font-size: 1rem;
-        line-height: 1.4;
-        color: #666;
+
+
+
+
+/* Style for the hamburger menu button */
+#menu {
+    display: block;
+    background-color: #343434;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative; /* Required for pseudo-elements */
+}
+
+/* Style for the before pseudo-element */
+#menu::before {
+    content: '☰';
+    position:absolute;
+    top: 50%;
+    left: 10px; /* Adjust as needed */
+    transform: translateY(-50%);
+   
+}
+
+/* Style for the after pseudo-element */
+#menu::after {
+    content: '❌';
+    position: absolute;
+    top: 50px; /* Adjust as needed */
+    right: 50px; /* Adjust as needed */
+    transform: translateY(0%);
+    display:none; /* Initially hide the close symbol */
+}
+
+/* Style for the navigation */
+.navigation {
+    display: none; /* Initially hide the navigation */
+}
+
+/* Display the navigation when the 'active' class is applied */
+.navigation.active {
+    display: block;
+}
+
+/* Style for the button when the menu is open */
+#menu.active::before {
+    display: none;
+}
+
+#menu.active::after {
+    display: block;
+}
+
+
+
+
+
+
+
+/* Styles for large screens */
+@media screen and (min-width: 600px) {
+    #menu {
+        display: none; /* Hide the button on large screens */
     }
-    
-    #scenarios ul {
-        list-style-type: decimal; /* Use decimal numbering for the list items */
-        padding-left: 20px;
+ .navigation  {display:flex;
+   align-items: center;
+}
+ 
+    /* Add any other styles for large screens here */
+}
+
+/* Styles for small screens */
+@media screen and (max-width: 600px) {
+    #menu {
+        display: block; /* Display the button on small screens */
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        position: relative;
     }
+}
+
+
+/* Styles for small screens */
+@media only screen and (max-width: 600px) {
+    figure {
+        flex-direction: column; /* Stack image on top of text */
+    }
+  
+    figure img {
+        width: 100%; /* Ensure image fills container width */
+        height: 100%;
+        margin-bottom: 10px; /* Add margin below image */
+    }
+  
+    .about-food {
+        flex: none; /* Reset flex to ensure text doesn't fill remaining space */
+    }
+  }
+
+
+   
+@media screen and (max-width: 600px) {
+    header {
+        align-items: flex-start; /* Align items vertically to the top */
+    }
+  
     
+  }
+
+  @media only screen and (min-width:600px){
+    nav ul{
+        display: flex;
+       
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    figure img {width: 100%}
+    
+}
+
+
+
+
+
+
+
+/* CSS for the fieldset */
+fieldset {
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color:rgb(245, 79, 79);
+  }
+
+input[type="text"]#userName {
+    width: 88%; 
+    border: 1px solid #f4d7d7;
+    border: 5px;
+  }
+
+
+input [type="checkbox"] {background-color: rgb(34, 74, 186);}
+  
+
+  
+  input[type="text"],
+  input[type="date"],
+  select,
+  textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #f4d7d7;
+    border: 5px;
+
+
+  }
+  
+
+ 
+  
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #af4ca0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid 1px;
+   align-items: center;
+   width: 90%;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a0a0;
+   
+
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+ 
+  
+ 
+  
+  /* Styling for the checkboxes */
+  input[type="checkbox"] + label {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  fieldset {
+    border: none;
+    
+  
+  }
+  span {color: rgb(27, 205, 0);}
+
+  textarea {
+    width: 88%; /* Adjust width to fill available space */
+    height: 120px; /* Set desired height */
+    resize: vertical; /* Allow vertical resizing only */
+    border: solid 1px;
+    align-items: center;
+    margin-left: 5px;
+    padding: 8px;
+  }
+
+
+
+
+  fieldset {
+    border: none;
+    width: 100%; /* Adjust width as needed */
+    margin: auto; /* Center horizontally */
+    margin-bottom: 20px; /* Add some space below the fieldset */
+  }
+  
+  fieldset label {
+    display: block; /* Ensure labels are displayed as blocks */
+    text-align: left; /* Align label text to the left */
+    margin-bottom: 5px; /* Add some space below each label */
+  }
+  
+  fieldset select {
+    width: 75%; /* Make the select element fill the entire width of the fieldset */
+    padding: 10px; /* Add padding for better appearance */
+    margin-bottom: 10px; /* Add some space below the select element */
+  }
+  
+  fieldset label {
+    display: inline-block; /* Ensures labels appear in-line */
+    margin-right: 10px; /* Add space between radio buttons and labels */
+  }
