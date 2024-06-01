@@ -72,8 +72,8 @@ function handleSubmit(event) {
     experiences.push({ food: selectedFood, experience: experience });
     localStorage.setItem('experiences', JSON.stringify(experiences));
 
-    // Display a confirmation message
-    document.getElementById('confirmation').textContent = `Thank you for sharing your experience with ${selectedFood}!`;
+    // Redirect to confirmation page
+    window.location.href = 'confirmation.html';
 }
 
 // Function to display saved experiences from localStorage
@@ -99,4 +99,3 @@ function initializePage() {
 // Event listeners
 document.getElementById('experienceForm').addEventListener('submit', handleSubmit);
 document.addEventListener('DOMContentLoaded', initializePage);
-
