@@ -23,6 +23,17 @@ h2 {color: forestgreen;
 margin:0 auto;
 margin-left: 15px;
 }
+
+input:focus, button:focus {
+    outline: 2px solid #45a0a0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
 section p {padding-top: 5px ;
 color: rgb(39, 64, 91);
 width: 90%;
@@ -72,6 +83,10 @@ nav a:hover {
     display: block;
 }
 
+.navigation .active a {
+    font-weight: bold;
+    color: #f79e9e;
+}
 
 /* Styles for large screens */
 @media screen and (min-width: 768px) {
@@ -113,6 +128,13 @@ footer {
     color: #fff; /* White text color */
     padding: 20px;
     text-align: center;
+
+    background-size: 200% 100%;
+    transition: background-position 0.5s;
+}
+
+footer:hover {
+    background-position: -100% 0;
 }
 
 footer p {
@@ -141,8 +163,14 @@ footer p {
         margin-bottom: 10px;
     }
 
+    input.error {
+        border-color: rgb(240, 27, 27);
+    }
 
 
+    input:focus, button:focus {
+        outline: 2px solid #45a0a0;
+    }
 
 /* Style for the hamburger menu button */
 #menu {
@@ -269,7 +297,9 @@ footer p {
 }
 
 
-
+button, a {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
 
 

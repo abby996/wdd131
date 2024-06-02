@@ -20,6 +20,12 @@ button {color: rgb(86, 206, 86);
         background: dimgray;
        margin-left: 15px;
 }
+button, a {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+button:hover {color: rgb(232, 77, 21);
+background:rgb(255, 250, 231) ;
+}
 
 @media screen and (max-width: 600px) {
   
