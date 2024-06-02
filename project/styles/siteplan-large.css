@@ -1,7 +1,20 @@
 
-h1 {color: rgb(234, 100, 100);}
+h1 {color: rgb(234, 100, 100);
+    text-align: center;
+}
 
-h2 {color: rgb(20, 50, 220);}
+h2 {color: rgb(20, 50, 220);
+text-align: center;
+}
+body#confirm{background: rgb(247, 232, 212);}
+
+img#flag1 {align-items: center;
+    margin: 0 auto;
+    margin-left: 35%;
+    justify-content: center;
+    width: 35%;
+
+}
 
 button {color: rgb(86, 206, 86);
         background: dimgray;

@@ -32,9 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-
-
 const foodItems = [
     { name: "Lalo" },
     { name: "Fritay" },
@@ -60,42 +57,26 @@ function populateProductOptions() {
     });
 }
 
-// Function to handle form submission
-function handleSubmit(event) {
-    event.preventDefault(); // Prevent default form submission
-    
-    const selectedFood = document.getElementById('productName').value;
-    const experience = document.getElementById('writtenExperience').value;
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('experienceForm');
 
-    // Store the experience in localStorage
-    let experiences = JSON.parse(localStorage.getItem('experiences')) || [];
-    experiences.push({ food: selectedFood, experience: experience });
-    localStorage.setItem('experiences', JSON.stringify(experiences));
+    function handleSubmit(event) {
+        event.preventDefault(); // Prevent default form submission
 
-    // Redirect to confirmation page
-    window.location.href = 'confirmation.html';
-}
+        const selectedFood = document.querySelector('input[name="usefulFeatures"]:checked');
+        const experience = document.getElementById('writtenExperience').value;
 
-// Function to display saved experiences from localStorage
-function displayExperiences() {
-    const experiences = JSON.parse(localStorage.getItem('experiences')) || [];
+        // Store the experience and selected food in localStorage
+        localStorage.setItem('selectedFood', selectedFood ? selectedFood.value : '');
+        localStorage.setItem('experience', experience);
 
-    const experienceList = document.getElementById('experienceList');
-    experienceList.innerHTML = '';
+        // Redirect to confirmation page
+        window.location.href = 'confirmation.html';
+    }
 
-    experiences.forEach((exp, index) => {
-        const listItem = document.createElement('li');
-        listItem.textContent = `${index + 1}. ${exp.food}: ${exp.experience}`;
-        experienceList.appendChild(listItem);
-    });
-}
+    // Event listener for form submission
+    form.addEventListener('submit', handleSubmit);
+});
 
-// Main function to initialize the page
-function initializePage() {
-    populateProductOptions(); // Populate product options in dropdown
-    displayExperiences(); // Display saved experiences
-}
-
-// Event listeners
-document.getElementById('experienceForm').addEventListener('submit', handleSubmit);
-document.addEventListener('DOMContentLoaded', initializePage);
+// Call the function to populate product options when the page loads
+document.addEventListener('DOMContentLoaded', populateProductOptions);
